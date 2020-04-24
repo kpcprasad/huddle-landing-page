@@ -1,0 +1,128 @@
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 0%;
+}
+
+/* --------------------------------- LOGO holder --------------------------------- */
+.logo-holder{
+    width: calc(75% + -3em);
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.logo{
+    width: 52%;
+}    
+
+/* --------------------------------- LOGO holder --------------------------------- */
+.big-img img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14%;
+}
+
+/* --------------------------------- Content --------------------------------- */
+.container{
+    display: block;
+}
+
+
+.content{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.btn{
+    width: 70%;
+    height: 40px;
+    margin-top: 4%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    color: hsl(257, 40%, 49%);
+}
+
+/* --------------------------------- Content --------------------------------- */
+.social{
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 5%;
+}
+
+
+@media (min-width:700px) {
+
+    body{
+        background-image: url(images/bg-desktop.svg);
+        height: 800px;
+    }
+
+    .logo-holder{
+        width: 216px;
+        padding-left: 70px;
+        padding-top: 54px;
+    }
+    
+    .logo{
+        width: inherit;
+    } 
+
+    .container{
+        display: flex;
+    }
+
+    .content{
+        flex: 2;
+        width: 80%;
+        margin-top: 6%;
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    .content h2{
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 4%;
+    }
+
+    .big-img{
+        flex-grow: 1.5;
+        width: 30%;
+    }
+
+    .big-img img{
+        width: 88%;
+        display: block;
+        margin-left: 9%;
+        margin-right: unset;
+        margin-top: 10%;
+    }
+
+    .btn{
+        width: 40%;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 1.3em;
+    }
+}  
